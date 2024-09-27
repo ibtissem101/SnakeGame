@@ -103,7 +103,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(moveSnake, 200);
+    const interval = setInterval(moveSnake, 180);
     return () => clearInterval(interval);
   }, [snake, direction, food, score, bestScore, gameStarted]);
 
